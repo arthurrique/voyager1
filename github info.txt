@@ -1,0 +1,21 @@
+git remote add origin (Linkar o projeto no github) -> origin é o link do github
+ essa origem remota fica salva no arquivo git config, no projeto. o que significa que vai estar salvo lá sempre, e caso precise remover, usar git remote remove origin no terminal, na pasta do projeto.
+a origem pode mudar, pode ser outros sites de git igual o github. como o gitlab, por exemplo, etc
+
+git push e git pull:
+git push - envia coisa nova pra origem
+git pull - baixa da origem
+
+git push origin <branch> subir o código da branch para a origin (github origin definido)
+git push origin master -> subi o código da branch (master) para o origin adicionado (github)
+git push origin voyger1 -> subi o código da branch voyager1 para o origin definido (github)
+git push origin --delete voyager1 -> deletando a branch voyager1 da origin (github)
+
+git pull origin master - baixar os arquivos do projeto, de master
+
+git reset HEAD file.txt - Isso remove file.txt do stage, mas as alterações feitas nele permanecem no diretório de trabalho.
+
+git reset HEAD~1 - desfazer o último commit, mantendo as alterações no diretório de trabalho. Isso vai fazer com que as alterações do último commit voltem para o estado de modificações não staged.
+
+git checkout -- arquivo1 arquivo2 ... - Substitua arquivo1, arquivo2, etc., pelos nomes dos arquivos que você deseja reverter. Isso reverte o arquivo para o estado do ultimo commit registrado dele.
+
